@@ -4,7 +4,7 @@ function Navigation() {
   const navItems = ["Home", "About", "Projects", "Contact"];
   return (
     <nav className="z-20 fixed top-1/2 -translate-y-1/2 p-4 hidden lg:block">
-      <ul className="flex items-start font-bold text-baseLight text-6xl flex-col ">
+      <ul className="flex items-start font-bold text-baseLight text-4xl xl:text-6xl flex-col ">
         {navItems.map((item, i) => {
           return (
             <motion.li

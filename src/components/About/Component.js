@@ -18,7 +18,7 @@ function About(props) {
     >
       <AnimatedText
         text="About"
-        classes="font-parklane text-4xl lg:text-7xl mb-4"
+        classes="font-parklane text-4xl lg:text-6xl mb-4"
       />
       {/* <div className="flex flex-col p-4 w-full lg:justify-center items-center lg:flex-row">
         <FrameContainer
