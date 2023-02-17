@@ -13,7 +13,7 @@ function Navigation() {
                 x: "10%",
                 transition: { type: "spring", stiffness: 100 },
               }}
-              className="group h-12 flex items-center justify-center my-4"
+              className="group h-12 flex items-center justify-center my-2 xl:my-4"
               initial={{ translateX: "-200%" }}
               animate={{
                 translateX: 0,
