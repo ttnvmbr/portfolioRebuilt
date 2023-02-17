@@ -22,10 +22,10 @@ function FrameContainer(props) {
       className="max-w-sm p-8 relative w-full "
     >
       <Frame />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-left">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-left whitespace-pre-wrap">
         <div className="text-6xl p-4">{props.icon}</div>
-        <p className=" text-2xl">{props.text1}</p>
-        <p className=" text-xl text-baseGreen">{props.text2}</p>
+        <p className=" text-2xl w-full">{props.text1}</p>
+        <p className=" text-xl text-baseGreen w-full">{props.text2}</p>
       </div>
     </motion.div>
   );
