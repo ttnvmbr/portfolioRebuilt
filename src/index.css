@@ -1,13 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --base-dark: #6d2e46;
+    --base-mid: #a26769;
+    --base-neutral: #d5b9b2;
+    --base-light: #ece2d0;
+    --base-accent: #cebebe;
+    --base-green: #acaf9b;
+    --base-green-dark: #6a6b5f;
+    --base-brown: #593637;
+    --base-black: #221d23;
+  }
+
+  @font-face {
+    font-family: "parklane";
+    src: url("./fonts/parklane.ttf");
+    format: ("truetype");
+  }
+
+  @font-face {
+    font-family: "abc";
+    src: url("./fonts/abc.otf");
+    format: ("opentype");
+  }
+
+  body {
+    @apply scrollbar-hide m-0 bg-baseBlack font-abc text-baseLight;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.flipX {
+  transform: scaleX(-1);
 }
