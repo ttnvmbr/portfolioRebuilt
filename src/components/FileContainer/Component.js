@@ -9,17 +9,8 @@ function FileContainer(props) {
   return (
     <motion.div
       whileHover={{
-        rotate: props.left == true ? left : right,
-        transition: {
-          rotate: {
-            repeat: Infinity,
-            repeatType: "reverse",
-            duration: 3,
-            ease: "easeInOut",
-          },
-          type: "spring",
-          bounce: 0.6,
-        },
+        rotate: props.left == true ? -10 : 10,
+        transition: { type: "spring", stiffness: 100 },
       }}
       className="w-full p-4"
     >
