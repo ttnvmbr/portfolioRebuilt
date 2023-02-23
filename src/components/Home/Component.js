@@ -2,10 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Desk from "../../svg/Desk";
 import AnimatedText from "../AnimatedText/Component";
-export function Home(props) {
-  const name = "Inci";
-  const splitName = [...name];
-
+export function Home() {
   return (
     <motion.div
       initial={{ opacity: 0, y: -100 }}
@@ -13,13 +10,13 @@ export function Home(props) {
         opacity: 1,
         x: 0,
         y: 0,
-        transition: { duration: props.animationSpeed },
+        transition: { duration: 3 },
       }}
       exit={{
         opacity: 0,
         x: 0,
         y: 100,
-        transition: { duration: props.animationSpeed },
+        transition: { duration: 3 },
       }}
       transition={{ type: "linear" }}
       className="relative w-screen h-screen flex justify-center items-center overflow-hidden"
@@ -44,7 +41,7 @@ export function Home(props) {
             animate={{
               translateY: 0,
               transition: {
-                duration: 1.4,
+                duration: 3,
                 ease: "easeInOut",
               },
             }}
@@ -54,9 +51,17 @@ export function Home(props) {
             Creative developer
           </motion.p>
         </div>
-        <div className="lg:order-1 w-full h-full p-2">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { duration: 3 },
+          }}
+          end={{ opacity: 1 }}
+          className="lg:order-1 w-full h-full p-2"
+        >
           <Desk />
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

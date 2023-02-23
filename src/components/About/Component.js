@@ -1,20 +1,13 @@
 import React from "react";
 import AnimatedText from "../AnimatedText/Component";
-import File from "../../svg/File";
-import File2 from "../../svg/File2";
-import { VscCode } from "react-icons/vsc";
-import { IoSchoolOutline } from "react-icons/io5";
-import { GrBlockQuote } from "react-icons/gr";
-import FrameContainer from "../FrameContainer/Component";
-import FrameFlipContainer from "../FrameFlipContainer/Component";
-import Plant from "../../svg/Plant";
 import FileContainer from "../FileContainer/Component";
+import IntroductionFileContainer from "../IntroductionFileContainer/Component";
 
-function About(props) {
+function About() {
   return (
     <div
       id="about"
-      className="w-screen text-baseLight text-center relative flex justify-center items-center flex-col"
+      className="w-screen text-baseLight text-center relative flex justify-center items-center flex-col min-h-screen"
     >
       <AnimatedText
         text="About"
@@ -41,6 +34,9 @@ function About(props) {
       <div className="flex flex-col p-4 w-full md:w-3/4 lg:w-1/2 lg:justify-center items-center lg:flex-row">
         <FileContainer left />
         <FileContainer />
+      </div>
+      <div className="w-full md:w-1/2 lg:w-1/4">
+        <IntroductionFileContainer />
       </div>
     </div>
   );

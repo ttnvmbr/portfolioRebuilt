@@ -1,12 +1,85 @@
+import React from "react";
+import Star from "../../svg/Star";
+import AnimatedText from "../AnimatedText/Component";
+import ToggleList from "../ToggleList/Component";
+import { motion } from "framer-motion";
+
 export function Skills() {
+  const toggles = {
+    Languages: [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "C#",
+      "PHP",
+      "SQL",
+      "GraphQL",
+    ],
+    "Frameworks/Game-engines": [
+      "React",
+      "Unity",
+      "NextJS",
+      "ML5JS",
+      "ThreeJS",
+      "Laravel",
+      "Tailwind",
+      "Bootstrap",
+    ],
+    "Tools/Other": ["Scrum", "Jira", "Git", "Figma", "Trello", "Miro"],
+  };
+
   return (
-    <div className="absolute w-full h-full top-0 left-0 text-baseDark text-center">
-      <div className="flex-col w-[90%] h-[90%] rounded-3xl left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 absolute flex justify-center items-center">
-        <h1 className="text-3xl sm:text-4xl pt-2 text-shadow-md md:text-6xl xl:text-7xl 2xl:text-9xl px-2">
-          Skills
-        </h1>
-        <div className="flex flex-col xl:flex-row w-full items-center xl:justify-center xl:text-left"></div>
+    <div
+      id="skills"
+      className="w-screen text-baseLight text-center relative flex justify-center items-center flex-col min-h-screen"
+    >
+      <div className="flex items-baseline justify-center mb-1">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { duration: 3 },
+          }}
+          end={{ opacity: 1 }}
+          className=" w-1/12"
+          whileHover={{
+            rotate: 360,
+            transition: { repeat: Infinity, duration: 1.5 },
+          }}
+        >
+          <Star />
+        </motion.div>
+        <AnimatedText
+          text="Skills"
+          classes="font-parklane text-4xl lg:text-6xl"
+        />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { duration: 3 },
+          }}
+          end={{ opacity: 1 }}
+          whileHover={{
+            rotate: 360,
+            transition: { repeat: Infinity, duration: 1.5 },
+          }}
+          className=" w-1/12"
+        >
+          <Star />
+        </motion.div>
       </div>
+      <p className="text-xl mb-4 text-baseMid">
+        View my
+        <a
+          className="pl-1 text-baseGreen underline underline-offset-2 hover:text-baseGreenDark"
+          href=""
+        >
+          curriculum vitae
+        </a>
+      </p>
+      <ToggleList toggles={toggles} />
     </div>
   );
 }

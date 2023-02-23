@@ -9,7 +9,7 @@ function AnimatedText(props) {
         return (
           <motion.h1
             initial={{ translateX: `-${200 * i}%` }}
-            animate={{ translateX: 0, transition: { duration: 1.4 } }}
+            animate={{ translateX: 0, transition: { duration: 2 } }}
             end={{ translateX: 0 }}
             whileHover={{
               y: "20%",
