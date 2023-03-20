@@ -14,11 +14,11 @@ function About() {
         classes="font-parklane text-4xl lg:text-6xl mb-4"
       />
 
-      <div className="flex flex-col p-4 w-full md:w-3/4 lg:w-1/2 lg:justify-center items-center lg:flex-row max-w-2xl">
+      <div className="flex flex-col p-4 w-full md:w-3/4 lg:w-1/2 lg:justify-center items-center lg:flex-row max-w-md lg:max-w-2xl">
         <FileContainer left />
         <FileContainer />
       </div>
-      <div className="w-full md:w-3/4 lg:w-1/2 max-w-2xl">
+      <div className="w-full md:w-3/4 lg:w-1/2 max-w-md lg:max-w-2xl">
         <IntroductionFileContainer />
       </div>
     </div>
