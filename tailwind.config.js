@@ -29,6 +29,7 @@ module.exports = {
       fontFamily: {
         abc: ["abc", "sans-serif"],
         parklane: ["parklane", "sans-serif"],
+        lgc: ["lgc", "sans-serif"],
       },
     },
   },

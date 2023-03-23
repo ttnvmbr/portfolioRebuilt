@@ -16,6 +16,7 @@ export const skillData = {
     "ML5JS",
     "ThreeJS",
     "Laravel",
+    "Sanity",
     "Tailwind",
     "Bootstrap",
   ],

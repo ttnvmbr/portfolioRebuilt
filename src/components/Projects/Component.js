@@ -6,7 +6,7 @@ import { projectData } from "./projectData";
 function Projects() {
   return (
     <div
-      id="Projects"
+      id="projects"
       className="w-screen text-baseLight text-center flex items-center flex-col h-screen justify-center"
     >
       <AnimatedText

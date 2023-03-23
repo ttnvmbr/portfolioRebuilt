@@ -22,6 +22,12 @@
   }
 
   @font-face {
+    font-family: "lgc";
+    src: url("./fonts/lgc.ttf");
+    format: ("truetype");
+  }
+
+  @font-face {
     font-family: "abc";
     src: url("./fonts/abc.otf");
     format: ("opentype");
