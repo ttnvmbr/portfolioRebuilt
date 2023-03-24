@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import Project from "../Project/Component";
 
-function ProjectContainer(props) {
+function ProjectsContainer(props) {
   const [currentTab, setcurrentTab] = useState(props.data[0]);
   return (
     <div className="w-3/4 bg-baseGreenDark h-2/3 rounded-lg max-w-4xl flex items-end relative">
@@ -12,7 +13,7 @@ function ProjectContainer(props) {
         <div className="absolute top-0 left-32 flex w-1/2 h-full justify-around md:justify-start">
           {props.data.map((item, index) => {
             if (item === currentTab) {
-              return;
+              return null;
             } else {
               return (
                 <button
@@ -38,36 +39,13 @@ function ProjectContainer(props) {
       <div className=" w-full absolute h-[85%] overflow-y-auto">
         {currentTab.projects.map((projectItem) => {
           return (
-            <div className="flex flex-col text-left p-5">
-              <h1 className="text-baseBlack text-4xl mb-1">
-                {projectItem.title}
-              </h1>
-              <div className="grid grid-flow-col w-fit gap-2">
-                {projectItem.tags.map((tag) => {
-                  return (
-                    <div className=" p-2 bg-baseGreenDark rounded-lg h-6 flex justify-center items-center mb-1 font-lgc">
-                      <p>{tag}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <img className=" max-h-96 w-auto" src={projectItem.image}></img>
-              <p className="text-baseBlack font-lgc text-sm py-2">
-                {projectItem.description}
-              </p>
-              <div className="grid gap-2 grid-flow-col w-fit">
-                {projectItem.links.map((linkItem) => {
-                  return (
-                    <a
-                      className="h-fit bg-baseMid hover:bg-baseDark max-w-fit p-2 font-lgc flex justify-center items-center text-center rounded-lg text-mid md:text-lg"
-                      href={linkItem.link}
-                    >
-                      {linkItem.linkText}
-                    </a>
-                  );
-                })}
-              </div>
-            </div>
+            <Project
+              title={projectItem.title}
+              description={projectItem.description}
+              image={projectItem.image}
+              tags={projectItem.tags}
+              links={projectItem.links}
+            />
           );
         })}
       </div>
@@ -75,4 +53,4 @@ function ProjectContainer(props) {
   );
 }
 
-export default ProjectContainer;
+export default ProjectsContainer;

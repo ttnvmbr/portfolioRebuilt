@@ -13,7 +13,6 @@ module.exports = {
         baseNeutral: "var(--base-neutral)",
         baseLight: "var(--base-light)",
         baseAccent: "var(--base-accent)",
-        baseNeutralTransparent: "rgba(162,103,105,0.5)",
         baseGreen: "var(--base-green)",
         baseGreenDark: "var(--base-green-dark)",
         baseBrown: "var(--base-brown)",

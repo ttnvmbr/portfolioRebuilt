@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectContainer from "../ProjectContainer/Component";
+import ProjectsContainer from "../ProjectsContainer/Component";
 import AnimatedText from "../AnimatedText/Component";
 import { projectData } from "./projectData";
 
@@ -13,7 +13,7 @@ function Projects() {
         text="Projects"
         classes="font-parklane text-4xl lg:text-6xl mb-6"
       />
-      <ProjectContainer data={projectData} />
+      <ProjectsContainer data={projectData} />
     </div>
   );
 }

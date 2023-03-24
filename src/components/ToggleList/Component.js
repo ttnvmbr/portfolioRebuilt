@@ -3,29 +3,35 @@ import { useState } from "react";
 
 export function ToggleList(props) {
   const [currentActive, setcurrentActive] = useState(
-    Object.keys(props.toggles)[0]
+    Object.keys(props.toggleData)[0]
   );
 
   const [currentActiveList, setcurrentActiveList] = useState(
-    props.toggles[currentActive]
+    props.toggleData[currentActive]
   );
 
   function toggleActive(newActive) {
     setcurrentActive(newActive);
-    setcurrentActiveList(props.toggles[newActive]);
+    setcurrentActiveList(props.toggleData[newActive]);
   }
 
   return (
-    <div className="text-center flex justify-center items-center flex-col ">
-      <ul className="text-2xl lg:flex border-baseMid border-2 p-0">
-        {Object.keys(props.toggles).map((toggleKey) => {
+    <div className="text-center flex justify-center items-center flex-col w-3/4 max-w-xl">
+      <ul className="text-2xl border-baseDark border-2 p-0 rounded-lg w-full grid">
+        {Object.keys(props.toggleData).map((toggleKey, index) => {
           return (
             <li>
               <button
-                className={`uppercase p-2 mt-1 hover:text-baseMid ${
+                className={`uppercase hover:bg-baseMid w-full p-2 hover:text-baseLight border-baseDark border-2 ${
                   currentActive === toggleKey
-                    ? "text-baseMid underline underline-offset-4"
-                    : "text-baseDark"
+                    ? "underline underline-offset-4 bg-baseMid text-baseLight"
+                    : "bg-baseNeutral text-baseMid"
+                } ${
+                  index === 0
+                    ? "rounded-t-md"
+                    : index === 2
+                    ? "rounded-b-md"
+                    : ""
                 }`}
                 onClick={() => toggleActive(toggleKey)}
               >
@@ -36,9 +42,13 @@ export function ToggleList(props) {
         })}
       </ul>
 
-      <ul className="text-2xl p-4 text-left">
+      <ul className="text-2xl grid grid-flow-row gap-2 md:grid-cols-3 grid-cols-2 w-full mt-4">
         {currentActiveList.map((toggleItems) => {
-          return <li className=" list-disc">{toggleItems}</li>;
+          return (
+            <li className="p-2 bg-baseGreenDark rounded-lg h-8 flex justify-center items-center mb-1 font-lgc">
+              {toggleItems}
+            </li>
+          );
         })}
       </ul>
     </div>
