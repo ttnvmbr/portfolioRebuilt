@@ -22,7 +22,9 @@ function Project(props) {
               className="h-fit bg-baseMid hover:bg-baseDark max-w-fit p-2 font-lgc flex justify-center items-center text-center rounded-lg text-mid "
               href={linkItem.link}
             >
-              {linkItem.linkText}
+              {props.currentLanguage === "en"
+                ? linkItem.linkText
+                : linkItem.linkTextNl}
             </a>
           );
         })}

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Desk from "../../svg/Desk";
 import AnimatedText from "../AnimatedText/Component";
-export function Home() {
+export function Home(props) {
   return (
     <motion.div
       initial={{ opacity: 0, y: -100 }}
@@ -46,9 +46,13 @@ export function Home() {
               },
             }}
             end={{ translateY: 0 }}
-            className="text-3xl text-baseGreen absolute font-abc bottom-1/2 right-0 lg:text-6xl"
+            className={`text-3xl text-baseGreen absolute font-abc bottom-1/2 ${
+              props.currentLanguage === "en" ? "right-0" : "-right-6"
+            } lg:text-6xl`}
           >
-            Creative developer
+            {props.currentLanguage === "en"
+              ? "Creative developer"
+              : "Creatief programmeur"}
           </motion.p>
         </div>
         <motion.div

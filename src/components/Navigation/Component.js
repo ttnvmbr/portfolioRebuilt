@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
+import { navItems } from "./NavData";
 
-function Navigation() {
-  const navItems = ["Home", "About", "Projects", "Skills", "Contact"];
+function Navigation(props) {
   return (
     <nav className="z-20 fixed top-1/2 -translate-y-1/2 p-4 hidden lg:block">
       <ul className="flex items-start font-bold text-baseLight text-4xl flex-col ">
         {navItems.map((item, i) => {
           return (
             <motion.li
-              key={item}
+              key={item.title}
               whileHover={{
                 x: "10%",
                 transition: { type: "spring", stiffness: 100 },
@@ -25,10 +25,12 @@ function Navigation() {
               end={{ translateX: 0 }}
             >
               <a
-                href={item === "Home" ? "/" : `#${item.toLowerCase()}`}
+                href={
+                  item.title === "Home" ? "/" : `#${item.title.toLowerCase()}`
+                }
                 className="group-hover:text-baseMid h-full w-full flex items-center justify-start p-4"
               >
-                {item}
+                {props.currentLanguage === "en" ? item.title : item.titleNl}
               </a>
             </motion.li>
           );

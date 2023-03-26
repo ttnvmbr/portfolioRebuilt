@@ -2,23 +2,16 @@ import React from "react";
 import { useState } from "react";
 
 export function ToggleList(props) {
-  const [currentActive, setcurrentActive] = useState(
-    Object.keys(props.toggleData)[0]
-  );
-
-  const [currentActiveList, setcurrentActiveList] = useState(
-    props.toggleData[currentActive]
-  );
+  const [currentActive, setcurrentActive] = useState(props.toggleData[0]);
 
   function toggleActive(newActive) {
     setcurrentActive(newActive);
-    setcurrentActiveList(props.toggleData[newActive]);
   }
 
   return (
     <div className="text-center flex justify-center items-center flex-col w-3/4 max-w-xl">
       <ul className="text-2xl border-baseDark border-2 p-0 rounded-lg w-full grid">
-        {Object.keys(props.toggleData).map((toggleKey, index) => {
+        {props.toggleData.map((toggleKey, index) => {
           return (
             <li>
               <button
@@ -35,7 +28,9 @@ export function ToggleList(props) {
                 }`}
                 onClick={() => toggleActive(toggleKey)}
               >
-                {toggleKey}
+                {props.currentLanguage === "en"
+                  ? toggleKey.title
+                  : toggleKey.titleNl}
               </button>
             </li>
           );
@@ -43,7 +38,7 @@ export function ToggleList(props) {
       </ul>
 
       <ul className="text-2xl grid grid-flow-row gap-2 md:grid-cols-3 grid-cols-2 w-full mt-4">
-        {currentActiveList.map((toggleItems) => {
+        {currentActive.items.map((toggleItems) => {
           return (
             <li className="p-2 bg-baseGreenDark rounded-lg h-8 flex justify-center items-center mb-1 font-lgc">
               {toggleItems}
