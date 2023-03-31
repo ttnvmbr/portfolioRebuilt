@@ -1,7 +1,7 @@
 import { ImLinkedin, ImMail3, ImGithub } from "react-icons/im";
 export const ContactData = [
   {
-    link: "https://www.linkedin.com/in/inci-yesiltepe-113336196/?originalSubdomain=nl",
+    link: "mailto:inciyesiltepe@gmail.com",
     icon: <ImMail3 className="w-full h-full" />,
     text: "Email",
   },
@@ -11,7 +11,7 @@ export const ContactData = [
     text: "LinkedIn",
   },
   {
-    link: "https://www.linkedin.com/in/inci-yesiltepe-113336196/?originalSubdomain=nl",
+    link: "https://github.com/ttnvmbr",
     icon: <ImGithub className="w-full h-full" />,
     text: "Github",
   },
