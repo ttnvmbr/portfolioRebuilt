@@ -15,7 +15,7 @@ function IntroductionFileContainer(props) {
         <div className="w-11/12 bg-baseGreenDark absolute left-6 bottom-36 flex justify-center items-center">
           <p className="text-md lg:text-lg p-2 font-lgc">
             {props.currentLanguage === "en"
-              ? "My education has enabled me to learn various programming languages and frameworks in a relatively short time. It has also thaught me the methodes, tools and ethical mindedness of a user-centered designer, which I incorporate into my projects."
+              ? "My education has enabled me to learn various programming languages and frameworks in a relatively short time. It has also taught me the methodes, tools and ethical mindedness of a user-centered designer, which I incorporate into my projects."
               : "Mijn opleiding heeft me in staat gesteld om in relatief korte tijd verschillende programmeertalen en frameworks te leren. Het heeft me ook de methodes, tools en ethische instelling van een user-centered designer bijgebracht, die ik in mijn projecten verwerk."}
           </p>
         </div>

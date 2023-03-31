@@ -2,6 +2,7 @@ import React from "react";
 import AnimatedText from "../AnimatedText/Component";
 import ToggleList from "../ToggleList/Component";
 import { skillData } from "./SkillData";
+import cv from "../../pdf/cv-inci-yesiltepe.pdf";
 
 export function Skills(props) {
   return (
@@ -18,7 +19,7 @@ export function Skills(props) {
         {props.currentLanguage === "en" ? "View my" : "Bekijk mijn"}
         <a
           className="pl-1 text-baseGreen underline underline-offset-2 hover:text-baseGreenDark"
-          href="/"
+          href={cv}
         >
           curriculum vitae
         </a>
