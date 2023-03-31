@@ -25,7 +25,7 @@ function IntroductionFileContainer(props) {
             <p className="text-baseBlack text-2xl lg:text-3xl text-left p-1">
               {props.currentLanguage === "en"
                 ? "Create technology"
-                : "Creër technologie "}
+                : "Ontwikkel technologie "}
             </p>
             <p className="text-baseBlack text-2xl lg:text-3xl  text-left p-1">
               {props.currentLanguage === "en" ? "along with" : "met"}

@@ -15,7 +15,7 @@ function FileContainer(props) {
           <div className="w-32 h-40 bg-baseLight absolute bottom-0 left-0"></div>
           <div className="w-56 bg-baseDark h-36 absolute left-16 -rotate-12 bottom-20 flex justify-center">
             <p className="text-md lg:text-lg p-2 font-lgc">
-              Creative Media & Game Technolgies student
+              Creative Media & Game Technologies student
             </p>
           </div>
           <div className="w-56 h-36 bg-baseLight absolute -bottom-1 left-6 skew-x-[-20deg] border-4 border-baseBlack flex justify-center items-center flex-col">

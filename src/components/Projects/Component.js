@@ -7,7 +7,7 @@ function Projects(props) {
   return (
     <div
       id="projects"
-      className="w-screen text-baseLight text-center flex items-center flex-col h-screen justify-center"
+      className="w-screen text-baseLight text-center flex items-center flex-col min-h-screen justify-center"
     >
       <AnimatedText
         text={props.currentLanguage === "en" ? "Projects" : "Projecten"}
