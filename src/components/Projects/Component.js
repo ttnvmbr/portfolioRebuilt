@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectsContainer from "../ProjectsContainer/Component";
 import AnimatedText from "../AnimatedText/Component";
-import { projectData } from "./ProjectData";
+import { projectData } from "./projectData";
 
 function Projects(props) {
   return (

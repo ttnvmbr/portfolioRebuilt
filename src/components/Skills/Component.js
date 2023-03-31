@@ -1,7 +1,7 @@
 import React from "react";
 import AnimatedText from "../AnimatedText/Component";
 import ToggleList from "../ToggleList/Component";
-import { skillData } from "./SkillData";
+import { skillData } from "./skillData";
 import cv from "../../pdf/cv-inci-yesiltepe.pdf";
 
 export function Skills(props) {

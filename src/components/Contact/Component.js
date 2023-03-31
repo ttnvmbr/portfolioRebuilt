@@ -1,6 +1,6 @@
 import React from "react";
 import AnimatedText from "../AnimatedText/Component";
-import { ContactData } from "./ContactData";
+import { ContactData } from "./contactData";
 
 export function Contact(props) {
   return (
