@@ -4,7 +4,7 @@ import Project from "../Project/Component";
 function ProjectsContainer(props) {
   const [currentTab, setcurrentTab] = useState(props.data[0]);
   return (
-    <div className="w-3/4 bg-baseGreenDark h-screen rounded-lg max-w-4xl flex items-end relative">
+    <div className="w-3/4 bg-baseGreenDark h-screen rounded-lg max-w-4xl flex items-end relative max-h-[45rem]">
       <div className="w-full h-[95%] bg-baseGreen rounded-b-lg">
         <div className="w-32 h-[5%] bg-baseGreen rounded-t-lg absolute top-0 flex justify-start items-center">
           <div className="ml-4 w-4 h-4">{currentTab.icon}</div>
