@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.49f02ee3.css",
+    "main.js": "/static/js/main.dcfb73ef.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/cv-inci-yesiltepe.pdf": "/static/media/cv-inci-yesiltepe.f9635b29c0955ab821c9.pdf",
+    "static/media/2druppels.png": "/static/media/2druppels.2c22ecb43c1fc143da8f.png",
+    "static/media/ratSoupBanner.png": "/static/media/ratSoupBanner.338dde4e19f743a14918.png",
+    "static/media/schijtprul.jpeg": "/static/media/schijtprul.6893d258d1b4caabb249.jpeg",
+    "static/media/ebc.png": "/static/media/ebc.0601131fcc6956350a61.png",
+    "static/media/heeltech.png": "/static/media/heeltech.fffbe35accf5e7174d09.png",
+    "static/media/iwfhBanner.png": "/static/media/iwfhBanner.de041c854856e49b583a.png",
+    "static/media/divorePrediction.jpg": "/static/media/divorePrediction.74ad3781502a4db4752b.jpg",
+    "static/media/robotverslag.jpg": "/static/media/robotverslag.765da6d22de111bf88c1.jpg",
+    "static/media/coconnect.jpg": "/static/media/coconnect.9266ed67ed72b94684a3.jpg",
+    "static/media/parklane.ttf": "/static/media/parklane.bbe5e9dcdd9164051784.ttf",
+    "static/media/abc.otf": "/static/media/abc.d6cf5edcd8eb749147e6.otf",
+    "static/media/cvsa.png": "/static/media/cvsa.f6a2a577684136919e96.png",
+    "static/media/lgc.ttf": "/static/media/lgc.eacd87871e9a39013626.ttf",
+    "index.html": "/index.html",
+    "main.49f02ee3.css.map": "/static/css/main.49f02ee3.css.map",
+    "main.dcfb73ef.js.map": "/static/js/main.dcfb73ef.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49f02ee3.css",
+    "static/js/main.dcfb73ef.js"
+  ]
+}
