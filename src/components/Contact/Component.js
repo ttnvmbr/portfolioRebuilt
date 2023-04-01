@@ -12,7 +12,7 @@ export function Contact(props) {
         text="Contact"
         classes="font-parklane text-4xl lg:text-6xl"
       />
-      <p className="text-2xl text-baseGreen mb-4">
+      <p className="text-xl md:text-2xl text-baseGreen mb-4">
         {props.currentLanguage === "en"
           ? "Let's create together!"
           : "Laten we samenwerken!"}

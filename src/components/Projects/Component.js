@@ -11,8 +11,22 @@ function Projects(props) {
     >
       <AnimatedText
         text={props.currentLanguage === "en" ? "Projects" : "Projecten"}
-        classes="font-parklane text-4xl lg:text-6xl mb-6"
+        classes="font-parklane text-4xl lg:text-6xl"
       />
+      <div className="flex flex-wrap text-baseMid text-xl md:text-2xl mb-6 px-4 justify-center">
+        <p>
+          {props.currentLanguage === "en"
+            ? "*Scroll through my projects"
+            : "*Scroll door mijn projecten"}
+        </p>
+        <p className="ml-1">
+          {props.currentLanguage === "en" ? "or pick" : "of kies een"}
+        </p>
+        <p className="ml-1">
+          {props.currentLanguage === "en" ? "another tab*" : "ander tabblad*"}
+        </p>
+      </div>
+
       <ProjectsContainer
         data={projectData}
         currentLanguage={props.currentLanguage}
