@@ -6,13 +6,15 @@ function ProjectsContainer(props) {
   return (
     <div className="w-3/4 bg-baseGreenDark h-screen rounded-lg max-w-4xl flex items-end relative max-h-[45rem]">
       <div className="w-full h-[95%] bg-baseGreen rounded-b-lg">
-        <div className="absolute top-0 flex w-1/2 h-full justify-around md:justify-start">
+        <div className="absolute top-0 flex w-full md:w-1/2 h-full justify-start">
           {props.data.map((item) => {
             return (
               <button
                 onClick={() => setcurrentTab(item)}
-                className={`h-[5%] flex items-center md:w-32 ${
-                  item === currentTab ? "bg-baseGreen" : "hover:bg-white/[0.10]"
+                className={`h-[5%] flex items-center w-28 ${
+                  item === currentTab
+                    ? "bg-baseGreen"
+                    : "hover:bg-white/[0.10]}"
                 } rounded-t-lg`}
               >
                 <div className="flex justify-start w-full items-center h-full">
