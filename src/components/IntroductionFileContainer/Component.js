@@ -23,6 +23,7 @@ function IntroductionFileContainer(props) {
         <div className="w-11/12 h-36 bg-baseLight -bottom-1 left-6 skew-x-[-20deg] border-4 border-baseBlack flex justify-center items-center flex-col">
           <div className="flex flex-wrap justify-center">
             <p className="text-baseBlack text-2xl lg:text-3xl text-left p-1">
+              &#8220;
               {props.currentLanguage === "en"
                 ? "Create technology"
                 : "Ontwikkel technologie "}
@@ -34,6 +35,7 @@ function IntroductionFileContainer(props) {
               {props.currentLanguage === "en"
                 ? "empathy, creativity & ethical responsibility"
                 : "empathie, creativiteit & ethische verantwoording"}
+              &#8221;
             </p>
           </div>
         </div>
