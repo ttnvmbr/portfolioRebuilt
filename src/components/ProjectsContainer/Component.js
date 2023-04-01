@@ -6,38 +6,32 @@ function ProjectsContainer(props) {
   return (
     <div className="w-3/4 bg-baseGreenDark h-screen rounded-lg max-w-4xl flex items-end relative max-h-[45rem]">
       <div className="w-full h-[95%] bg-baseGreen rounded-b-lg">
-        <div className="w-32 h-[5%] bg-baseGreen rounded-t-lg absolute top-0 flex justify-start items-center">
-          <div className="ml-4 w-4 h-4">{currentTab.icon}</div>
-          <p className="ml-2">
-            {props.currentLanguage === "en"
-              ? currentTab.title
-              : currentTab.titleNl}
-          </p>
-        </div>
-        <div className="absolute top-0 left-32 flex w-1/2 h-full justify-around md:justify-start">
+        <div className="absolute top-0 flex w-full md:w-1/2 h-full justify-start">
           {props.data.map((item) => {
-            if (item === currentTab) {
-              return null;
-            } else {
-              return (
-                <button
-                  onClick={() => setcurrentTab(item)}
-                  className="h-[5%] flex items-center md:w-32 hover:bg-white/[0.10] rounded-t-lg"
-                >
-                  <div className="flex justify-start w-full items-center h-full">
-                    <div className="ml-4 w-4 h-4">{item.icon}</div>
-                    <p className="ml-2">
-                      {props.currentLanguage === "en"
-                        ? item.title
-                        : item.titleNl}
-                    </p>
-                  </div>
-                  <div className="flex justify-end w-full items-center h-full">
+            return (
+              <button
+                onClick={() => setcurrentTab(item)}
+                className={`h-[5%] flex items-center w-28 ${
+                  item === currentTab
+                    ? "bg-baseGreen"
+                    : "hover:bg-white/[0.10]}"
+                } rounded-t-lg`}
+              >
+                <div className="flex justify-start w-full items-center h-full">
+                  <div className="ml-4 w-4 h-4">{item.icon}</div>
+                  <p className="ml-2">
+                    {props.currentLanguage === "en" ? item.title : item.titleNl}
+                  </p>
+                </div>
+                <div className="flex justify-end w-full items-center h-full">
+                  {item !== currentTab ? (
                     <div className="right-0 text-2xl bg-baseBlack w-[0.1px] h-5 ml-4"></div>
-                  </div>
-                </button>
-              );
-            }
+                  ) : (
+                    ""
+                  )}
+                </div>
+              </button>
+            );
           })}
         </div>
       </div>

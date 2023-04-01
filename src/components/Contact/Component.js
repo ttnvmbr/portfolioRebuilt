@@ -6,13 +6,13 @@ export function Contact(props) {
   return (
     <div
       id="contact"
-      className="w-screen text-baseLight text-center relative flex justify-center items-center flex-col h-screen"
+      className="w-screen text-baseLight text-center relative flex  items-center flex-col my-40 h-[40vh]"
     >
       <AnimatedText
         text="Contact"
         classes="font-parklane text-4xl lg:text-6xl"
       />
-      <p className="text-2xl text-baseGreen mb-4">
+      <p className="text-xl md:text-2xl text-baseGreen mb-4">
         {props.currentLanguage === "en"
           ? "Let's create together!"
           : "Laten we samenwerken!"}

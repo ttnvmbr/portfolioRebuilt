@@ -7,7 +7,7 @@ function About(props) {
   return (
     <div
       id="about"
-      className="w-screen text-baseLight text-center relative flex justify-center items-center flex-col min-h-screen"
+      className="w-screen text-baseLight text-center relative flex justify-center items-center flex-col min-h-screen py-40"
     >
       <AnimatedText
         text={props.currentLanguage === "en" ? "About" : "Over"}

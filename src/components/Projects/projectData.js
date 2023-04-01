@@ -40,7 +40,7 @@ export const projectData = [
         description:
           "I Won’t Forget Hue is a first-person, psychedelic thriller game. This game was commissioned by the Game Design & Development minor program and was produced in only fourteen weeks by a multidisciplinary team of seventeen students functioning as a game studio, which I was proudly part of. My contribution consisted mostly of developing the enemy AI and its behavior.",
         descriptionNl:
-          "I Won't Forget Hue is een first-person, psychedelische thrillergame. Dit spel is in opdracht van de minor Game Design & Development gemaakt in slechts veertien weken door een multidisciplinair team van zeventien studenten die als gamestudio functioneerden, waar ik met trots deel van uitmaakte. Mijn bijdrage bestond vooral uit het ontwikkelen van de AI vijand en zijn gedrag.",
+          "I Won't Forget Hue is een first-person, psychedelische thriller game. Dit spel is gemaakt in opdracht van de minor Game Design & Development in slechts veertien weken door een multidisciplinair team van zeventien studenten die als gamestudio functioneerden, waar ik met trots deel van uitmaakte. Mijn bijdrage bestond vooral uit het ontwikkelen van de AI vijand en zijn gedrag.",
       },
       {
         title: "Rat Soup",
@@ -56,7 +56,7 @@ export const projectData = [
         description:
           "Rat Soup is a 2.5D merge and collect mobile game. This game was commissioned by the Game Design & Development minor program and was produced in only four weeks by a multidisciplinary team of six students functioning as a game studio, which I was proudly part of. As one of only three developers, I contributed in a large part of the development process of the game. I focused on designing and developing a way to efficiently store and retrieve all game data that made it easier to manage for both the developers and designers.",
         descriptionNl:
-          "Rat Soup is een 2.5D merge and collect mobile game. Dit spel is in opdracht van de minor Game Design & Development gemaakt in slechts vier weken door een multidisciplinair team van zes studenten die als gamestudio functioneerden, waar ik met trots deel van uitmaakte. Als een van de slechts drie ontwikkelaars heb ik een groot deel van het ontwikkelingsproces van het spel voor mijn rekening genomen. Ik richtte me op het ontwerpen en ontwikkelen van een manier om alle spelgegevens efficiënt op te slaan en terug te vinden, zodat het makkelijker te beheren was voor zowel de ontwikkelaars als de ontwerpers.",
+          "Rat Soup is een 2.5D merge and collect mobile game. Dit spel is gemaakt in opdracht van de minor Game Design & Development in slechts vier weken door een multidisciplinair team van zes studenten die als gamestudio functioneerden, waar ik met trots deel van uitmaakte. Als een van de drie ontwikkelaars heb ik een groot deel van het ontwikkelingsproces van de game voor mijn rekening genomen. Ik richtte me op het ontwerpen en ontwikkelen van een manier om alle game data efficiënt op te slaan en terug te vinden, zodat het makkelijker te beheren was voor zowel de ontwikkelaars als de ontwerpers.",
       },
       {
         title: "Cards VS Alice",
@@ -77,7 +77,7 @@ export const projectData = [
         description:
           "As part of an assignment commissioned by the Creative Media & Game Technologies program, I implented the minimax algorithm on a simple game where the objective is to get Alice to the other side of the board. The cards use the minimax algorithm to anticipate on Alice's next move in order to catch Alice before she makes it to the other side of the board. Alice moves as the king in a chess game, while the cards move as the knights. ",
         descriptionNl:
-          "Als onderdeel van een opdracht van het Creative Media & Game Technologies programma heb ik het minimax algoritme toegepast op een eenvoudig spel waarbij het doel is Alice naar de andere kant van het bord te krijgen. De kaarten gebruiken het minimax algoritme om te anticiperen op de volgende zet van Alice om Alice te vangen voordat ze de andere kant van het bord bereikt. Alice beweegt als de koning in een schaakspel, terwijl de kaarten bewegen als de ridders. ",
+          "Als onderdeel van een opdracht van de opleiding Creative Media & Game Technologies heb ik het minimax algoritme toegepast op een eenvoudige game waarbij het doel is Alice naar de andere kant van het bord te krijgen. De kaarten gebruiken het minimax algoritme om te anticiperen op de volgende zet van Alice om Alice te vangen voordat ze de andere kant van het bord bereikt. Alice beweegt als de koning in een schaakspel, terwijl de kaarten bewegen als de ridders. ",
       },
     ],
   },
@@ -103,9 +103,9 @@ export const projectData = [
           },
         ],
         description:
-          "Twee Druppels Water is an application that mainly focuses on increasing user awareness of drinking water and the added value of tap water, by contrasting the differences in four different ways. This application was made as part of an assignment commissioned by the Creative Media & Game Technologies program in assosiciation with Oasen Drinkwater.",
+          "Twee Druppels Water is an application that mainly focuses on increasing user awareness of drinking water and the added value of tap water, by contrasting the differences in four different ways. I mainly focused on researching, designing and developing the interactive 3D part of the application. This application was made as part of an assignment commissioned by the Creative Media & Game Technologies program in assosiciation with Oasen Drinkwater.",
         descriptionNl:
-          "Twee druppels water is een applicatie die zich vooral richt op het vergroten van het bewustzijn van de gebruiker over drinkwater en de toegevoegde waarde van kraanwater, door de verschillen op vier verschillende manieren tegenover elkaar te zetten. Deze applicatie is gemaakt in het kader van een opdracht van de opleiding Creative Media & Game Technologies in samenwerking met Oasen Drinkwater.",
+          "Twee druppels water is een applicatie die zich vooral richt op het vergroten van het bewustzijn van de gebruiker over drinkwater en de toegevoegde waarde van kraanwater, door de verschillen op vier verschillende manieren tegenover elkaar te zetten. Ik heb me voornamelijk bezig gehouden met het onderzoeken, ontwerpen en ontwikkelen van het interactieve 3D aspect van de applicatie. Deze applicatie is gemaakt als onderdeel van een opdracht van de opleiding Creative Media & Game Technologies in samenwerking met Oasen Drinkwater.",
       },
       {
         title: "Ella Bella Creations",
@@ -121,7 +121,7 @@ export const projectData = [
         description:
           "Ella Bella Creations is a new and unique fashionbrand. I designed and developed the website. I used Sanity to build a customized CMS to allow Ella Bella Creations to easily manage all of their content themselves.",
         descriptionNl:
-          "Ella Bella Creations is een nieuw en uniek kledingmerk. Ik heb de website ontworpen en geprogrammeerd. Ik heb Sanity gebruikt om een op maat gemaakt CMS te realizeren, zodat Ella Bella Creations zelf gemakkelijk hun content kunnen beheren.",
+          "Ella Bella Creations is een nieuw en uniek kledingmerk. Ik heb de website ontworpen en ontwikkeld. Ik heb Sanity gebruikt om een op maat gemaakt CMS te realizeren, zodat Ella Bella Creations zelf gemakkelijk hun content kan beheren.",
       },
       {
         title: "Divorce Prediction",
@@ -196,9 +196,9 @@ export const projectData = [
           },
         ],
         description:
-          "The Schijtprullenbak is a smart recycle bin separates waste by itself with the use of AI. It also helps to create awareness about the importance of separating waste by telling the user in which bin the waste item is disposed. This product was part of an assignment commissioned by the Creative Media & Game Technologies program. As part of a team of five students, I contributed mainly by researching, designing and placing the hardware.",
+          "The Schijtprullenbak is a smart recycle bin separates waste by itself with the use of AI. It also helps to create awareness about the importance of separating waste by telling the user in which bin the waste item is disposed. As part of a team of five students, I contributed mainly by researching, designing and placing the hardware. This product was part of an assignment commissioned by the Creative Media & Game Technologies program.",
         descriptionNl:
-          "De schijtprullenbak is een zelfscheidende prullenbak met AI. Om meer bewustzijn voor het belang van het scheiden van te creëren krijgt de gebruiker na het weggooien te horen onder welke categorie het weggegooide product valt. Dit product is gemaakt als onderdeel van een opdracht van de opleiding Creative Media & Game Technologies. Als een van de vijf leerlingen uit het team, heb ik voornamelijk bijgedragen aan het onderzoeken, ontwerpen en het plaatsen van de hardware.",
+          "De schijtprullenbak is een zelfscheidende prullenbak met AI. Om meer bewustzijn voor het belang van het scheiden van te creëren krijgt de gebruiker na het weggooien te horen onder welke categorie het weggegooide product valt. Als een van de vijf leerlingen uit het team, heb ik voornamelijk bijgedragen aan het onderzoeken, ontwerpen en het plaatsen van de hardware. Dit product is gemaakt als onderdeel van een opdracht van de opleiding Creative Media & Game Technologies.",
       },
       {
         title: "Hete Liefde met Koude Robots",

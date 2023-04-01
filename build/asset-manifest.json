@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.49f02ee3.css",
-    "main.js": "/static/js/main.0b8395d7.js",
+    "main.css": "/static/css/main.266b4776.css",
+    "main.js": "/static/js/main.1c06011a.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
-    "static/media/cv-inci-yesiltepe.pdf": "/static/media/cv-inci-yesiltepe.f9635b29c0955ab821c9.pdf",
+    "static/media/cv-inci-yesiltepe.pdf": "/static/media/cv-inci-yesiltepe.25d908f5dc75b8475291.pdf",
     "static/media/2druppels.png": "/static/media/2druppels.2c22ecb43c1fc143da8f.png",
     "static/media/ratSoupBanner.png": "/static/media/ratSoupBanner.338dde4e19f743a14918.png",
     "static/media/schijtprul.jpeg": "/static/media/schijtprul.6893d258d1b4caabb249.jpeg",
@@ -18,12 +18,12 @@
     "static/media/cvsa.png": "/static/media/cvsa.f6a2a577684136919e96.png",
     "static/media/lgc.ttf": "/static/media/lgc.eacd87871e9a39013626.ttf",
     "index.html": "/index.html",
-    "main.49f02ee3.css.map": "/static/css/main.49f02ee3.css.map",
-    "main.0b8395d7.js.map": "/static/js/main.0b8395d7.js.map",
+    "main.266b4776.css.map": "/static/css/main.266b4776.css.map",
+    "main.1c06011a.js.map": "/static/js/main.1c06011a.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49f02ee3.css",
-    "static/js/main.0b8395d7.js"
+    "static/css/main.266b4776.css",
+    "static/js/main.1c06011a.js"
   ]
 }
