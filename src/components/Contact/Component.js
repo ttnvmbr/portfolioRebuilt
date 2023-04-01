@@ -6,7 +6,7 @@ export function Contact(props) {
   return (
     <div
       id="contact"
-      className="w-screen text-baseLight text-center relative flex justify-center items-center flex-col h-screen"
+      className="w-screen text-baseLight text-center relative flex  items-center flex-col my-40 h-[40vh]"
     >
       <AnimatedText
         text="Contact"
